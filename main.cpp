@@ -1,25 +1,21 @@
-#include <iostream>
-
-using namespace std;
-
-void sort(int arr[], int size) {
-    int tmp = 0;
-    for (size_t i = 0; i < size -1; i++) {
-        for (size_t j = 0; j < size - 1 -i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                tmp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = tmp;
-            }
-        }
-    }
-}
-
+#include "log.hpp"
 
 int main() {
-    int arr[] = {13, 22, 32, 4, 35, 61, 73, 18};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    sort(arr, size);
+    minilog::log_info("hello, the answer is {}", 42);
+    minilog::log_critical("this is right-aligned [{:>+10.04f}]", 3.14);
+
+    minilog::log_warn("good job, {1:.5s} for making {0}", "minilog", "archibate");
+    minilog::set_log_level(
+        minilog::log_level::trace); // default log level is info
+    minilog::set_log_file("mini.log"); // uncomment to dump log to a specific file
+
+    int my_variable = 42;
+    MINILOG_P(my_variable); // shown when log level lower than debug
+
+    minilog::log_trace("below is the color show :)");
+    #define _FUNCTION(name) minilog::log_##name(#name);
+    MINILOG_FOREACH_LOG_LEVEL(_FUNCTION)
+    #undef _FUNCTION
     return 0;
 }
 
