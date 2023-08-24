@@ -1,4 +1,6 @@
 #include "log.hpp"
+#include "print.hpp"
+#include <vector>
 
 int main() {
     minilog::log_info("hello, the answer is {}", 42);
@@ -16,6 +18,10 @@ int main() {
     #define _FUNCTION(name) minilog::log_##name(#name);
     MINILOG_FOREACH_LOG_LEVEL(_FUNCTION)
     #undef _FUNCTION
+
+    std::vector<std::string> vec = {"hello", "world"};
+    print(vec); // print vector
+
     return 0;
 }
 

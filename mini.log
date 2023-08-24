@@ -1,0 +1,18 @@
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:14 [debug] my_variable=42
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:16 [trace] below is the color show :)
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [trace] trace
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [debug] debug
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [info] info
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [critical] critical
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [warn] warn
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [error] error
+2023-08-24 17:45:27.923 /Users/hys/Code/C:C++/HysBase/src/main.cpp:18 [fatal] fatal
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:15 [debug] my_variable=42
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:17 [trace] below is the color show :)
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [trace] trace
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [debug] debug
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [info] info
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [critical] critical
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [warn] warn
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [error] error
+2023-08-24 17:48:12.500 /Users/hys/Code/C:C++/HysBase/src/main.cpp:19 [fatal] fatal
