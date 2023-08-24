@@ -48,3 +48,9 @@ jobs:
         shell: bash
         run: |
           VERBOSE=1 cmake --build build --config $BUILD_TYPE -j8
+          
+      - name: Run the tests
+        working-directory: ${{github.workspace}}/build
+        shell: bash
+        run: |
+          ctest
