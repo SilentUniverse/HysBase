@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(HysBase LANGUAGES CXX C)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILECOMMANDS ON)
 
@@ -25,3 +25,11 @@ add_subdirectory(thirdparty/fmt)
 target_link_libraries(HysBase PRIVATE fmt::fmt)
 
 target_compile_definitions(${PROJECT_NAME} PUBLIC -DOPENGLTUTOR_HOME=\"${CMAKE_CURRENT_SOURCE_DIR}/\")
+
+# gtest
+enable_testing()
+add_subdirectory(thirdparty/googletest)
+include_directories(thirdparty/googletest/include)
+
+# test case
+add_subdirectory(test)
